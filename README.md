@@ -1,14 +1,12 @@
 # Client-Server-Network-Application
 
-# Client–Server Network Application (C)
-
 This project implements a TCP-based client–server system in C using POSIX sockets.
 
 The application establishes a network connection between a client and a server, enabling structured message exchange and server-side request processing.
 
 ## Architecture
 
-The system follows a classic client–server model:
+The system follows a classic client-server model:
 
 - **Server**
   - Creates a TCP socket
