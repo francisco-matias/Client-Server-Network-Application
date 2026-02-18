@@ -21,7 +21,7 @@ The system supports node join and leave operations, topology recovery, and dynam
 - Dynamic routing-table construction  
 - Peer-to-peer communication over TCP  
 - Directory services over UDP  
-- I/O multiplexing with `select()`  
+- I/O multiplexing 
 - Fault-tolerant network recovery  
 - Low-level network programming in C  
 
