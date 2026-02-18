@@ -1,30 +1,47 @@
 # Distributed Tree-Based Content Routing Network
 
-This project implements a TCP-based client–server system in C using POSIX sockets.
+A distributed content discovery system implemented in C, featuring dynamic tree topology management, custom routing logic, and concurrent TCP/UDP communication using low-level POSIX sockets.
 
-The application establishes a network connection between a client and a server, enabling structured message exchange and server-side request processing.
+---
 
-## Architecture
+## Overview
 
-The system follows a classic client-server model:
+This project implements a distributed overlay network where nodes are organized in a dynamic tree topology and collaboratively perform content discovery and routing.
 
-- **Server**
-  - Creates a TCP socket
-  - Binds to a port and listens for incoming connections
-  - Accepts client connections
-  - Processes client requests
-  - Sends structured responses back to the client
+Each node maintains forwarding information learned automatically through message propagation, enabling efficient query-based content retrieval across the network.
 
-- **Client**
-  - Establishes a TCP connection to the server
-  - Sends requests following the defined protocol
-  - Receives and processes server responses
+The system supports node join and leave operations, topology recovery, and dynamic routing updates without centralized coordination.
 
-# Features
+---
 
-- TCP communication using POSIX sockets
-- Connection establishment and teardown
-- Structured message exchange protocol
-- Robust error handling
-- Clear separation between client and server logic
-- Low-level systems programming in C
+## Core Concepts Demonstrated
+
+- Distributed systems design  
+- Overlay network topology management  
+- Dynamic routing-table construction  
+- Peer-to-peer communication over TCP  
+- Directory services over UDP  
+- I/O multiplexing with `select()`  
+- Fault-tolerant network recovery  
+- Low-level network programming in C  
+
+---
+
+## Technical Skills Applied
+
+- POSIX socket programming  
+- Concurrent TCP and UDP handling  
+- Custom application-layer protocol design  
+- Manual message parsing and formatting  
+- Robust error handling and connection management  
+- Modular systems architecture  
+
+---
+
+## Technologies
+
+- C  
+- TCP / UDP  
+- POSIX sockets  
+- `select()` multiplexing  
+
